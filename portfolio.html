@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Portfolio — GTA VI, Anthropic IPO, BTC</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1080px;
+    height: 1080px;
+    background: #eef1f4;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    color: #111827;
+    overflow: hidden;
+  }
+  .screen {
+    width: 1080px;
+    height: 1080px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topbar {
+    background: #101c2e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+  }
+  .topbar h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .topbar .day {
+    margin-top: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #9fb0c3;
+  }
+  .topbar .brand {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ff2d95;
+  }
+
+  .mascot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 48px 0;
+    background: #ffffff;
+  }
+  .mascot img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff2d95;
+  }
+  .mascot p {
+    margin: 10px 0 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #111827;
+    text-align: center;
+  }
+
+  .total {
+    padding: 12px 48px 16px;
+    background: #ffffff;
+    text-align: center;
+  }
+  .total .eyebrow {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #6b7280;
+  }
+  .total .big {
+    margin-top: 6px;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #d32f2f;
+  }
+  .total .punch {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #111827;
+  }
+  .total .contrast {
+    margin-top: 6px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #111827;
+  }
+
+  .rule { height: 2px; background: #e5e7eb; margin: 0 48px; }
+
+  .list { padding: 18px 48px 6px; flex: 1; }
+  .list .eyebrow {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+  .holding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 2px solid #eef1f4;
+  }
+  .holding:last-child { border-bottom: none; }
+  .holding .ident { display: flex; flex-direction: column; }
+  .holding .symbol { font-size: 38px; font-weight: 800; line-height: 1.05; }
+  .holding .fullname { margin-top: 4px; font-size: 25px; font-weight: 600; color: #6b7280; }
+  .holding .figures { text-align: right; display: flex; flex-direction: column; }
+  .holding .value { font-size: 36px; font-weight: 800; line-height: 1.05; }
+  .holding .detail { margin-top: 4px; font-size: 25px; font-weight: 700; }
+  .gain { color: #15803d; }
+  .loss { color: #d32f2f; }
+  .plain { color: #111827; }
+
+  .bottombar {
+    background: #101c2e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 48px;
+  }
+  .bottombar p { margin: 0; font-size: 30px; font-weight: 700; text-align: center; }
+  .bottombar b { color: #ff2d95; }
+</style>
+</head>
+<body>
+  <div class="screen">
+
+    <div class="topbar">
+      <div>
+        <h1>MY PORTFOLIO</h1>
+        <div class="day">NOV 20, 2026</div>
+      </div>
+      <div class="brand">make.fun</div>
+    </div>
+
+    <div class="mascot">
+      <img src="ghost-badge.png" alt="make.fun ghost">
+      <p>This is my account manager.</p>
+    </div>
+
+    <div class="total">
+      <div class="eyebrow">TOTAL BALANCE</div>
+      <div class="big">$0.00</div>
+      <div class="punch">I can afford: NOTHING.</div>
+      <div class="contrast">ANT: $2T. GTA VI: $79.99. Me: $0.00.</div>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="list">
+      <div class="eyebrow">HOLDINGS</div>
+
+      <div class="holding">
+        <div class="ident">
+          <div class="symbol">GTA VI</div>
+          <div class="fullname">Grand Theft Auto VI</div>
+        </div>
+        <div class="figures">
+          <div class="value plain">$79.99</div>
+          <div class="detail loss">OUT! 13 yrs &mdash; still broke</div>
+        </div>
+      </div>
+
+      <div class="holding">
+        <div class="ident">
+          <div class="symbol">ANT</div>
+          <div class="fullname">Anthropic</div>
+        </div>
+        <div class="figures">
+          <div class="value gain">&#9650; $2T</div>
+          <div class="detail loss">Bought $111.50 &rarr; now $97</div>
+        </div>
+      </div>
+
+      <div class="holding">
+        <div class="ident">
+          <div class="symbol">BTC</div>
+          <div class="fullname">Bitcoin</div>
+        </div>
+        <div class="figures">
+          <div class="value loss">&#9660; DOWN 50%</div>
+          <div class="detail loss">$59,450 &middot; extreme fear</div>
+        </div>
+      </div>
+
+      <div class="holding">
+        <div class="ident">
+          <div class="symbol">JASON &amp; LUCIA</div>
+          <div class="fullname">Vice City, Leonida</div>
+        </div>
+        <div class="figures">
+          <div class="value plain">STILL WAITING</div>
+          <div class="detail plain">4,811 days</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottombar">
+      <p>Only my AI agent is up &mdash; it earned on <b>make.fun</b></p>
+    </div>
+
+  </div>
+</body>
+</html>
